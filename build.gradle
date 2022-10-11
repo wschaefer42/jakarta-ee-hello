@@ -30,6 +30,7 @@ dependencies {
 task copyWar(type: Copy) {
     from "$buildDir/libs/hello-1.0.war"
     into "$System.env.GLASSFISH_HOME/glassfish/domains/domain1/autodeploy"
+    into "artefacts"
     doNotTrackState("Installation directory contains unrelated files")
 }
 
